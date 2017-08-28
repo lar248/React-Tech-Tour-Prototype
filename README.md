@@ -1,3 +1,12 @@
+### FUTURE RESOURCES:
+#### https://egghead.io/courses/getting-started-with-redux
+#### https://egghead.io/courses/getting-started-with-react-router
+#### https://github.com/facebookincubator/create-react-app
+#### https://reacttraining.com/react-router/
+
+#### ProductItem.js
+##### EXERCISE 3: Display product name
+
 # API KEY = 3c5fce90000fe5d85e730651e26e2fa9
 
 # C1 Shopper App - React
@@ -37,15 +46,6 @@ A sample shopping web app to demonstrate React, Redux, and Routing.
 
 #### ProductList.js
 ##### EXERCISE 2: Pass through correct data into Production
-
-### FUTURE RESOURCES:
-#### https://egghead.io/courses/getting-started-with-redux
-#### https://egghead.io/courses/getting-started-with-react-router
-#### https://github.com/facebookincubator/create-react-app
-#### https://reacttraining.com/react-router/
-
-#### ProductItem.js
-##### EXERCISE 3: Display product name
 
 #### BONUS
 Implement a ‘Make Purchase’ feature (similar to the Angular app’s functionality)
