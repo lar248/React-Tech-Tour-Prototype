@@ -38,6 +38,12 @@ A sample shopping web app to demonstrate React, Redux, and Routing.
 #### ProductList.js
 ##### EXERCISE 2: Pass through correct data into Production
 
+### FUTURE RESOURCES:
+#### https://egghead.io/courses/getting-started-with-redux
+#### https://egghead.io/courses/getting-started-with-react-router
+#### https://github.com/facebookincubator/create-react-app
+#### https://reacttraining.com/react-router/
+
 #### ProductItem.js
 ##### EXERCISE 3: Display product name
 
