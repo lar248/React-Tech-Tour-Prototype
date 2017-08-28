@@ -1,3 +1,5 @@
+# API KEY = 3c5fce90000fe5d85e730651e26e2fa9
+
 # C1 Shopper App - React
 A sample shopping web app to demonstrate React, Redux, and Routing.
 
