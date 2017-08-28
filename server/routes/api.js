@@ -4,7 +4,7 @@ const router = express.Router();
 
 // declare axios for making http requests
 const axios = require('axios');
-const APIKey = '3c5fce90000fe5d85e730651e26e2fa9'; //TODO: Fill in your key
+const APIKey = '<FILL IN API KEY FROM NESSIE>'; // http://api.reimaginebanking.com/
 const APIPrefix = 'http://api.reimaginebanking.com';
 
 /* GET api listing. */
