@@ -5,7 +5,7 @@ const ProductItem = (
                       ) => {
   return (
     <li>
-      <div>TODO - EXERCISE 3 - Display the product name</div>
+      <div>{ product.product_name }</div>
     </li>
   )
 };

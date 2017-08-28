@@ -1,4 +1,4 @@
-# C1 Shopper App
+# C1 Shopper App - React
 A sample shopping web app to demonstrate React, Redux, and Routing.
 
 ## Steps to running this app
@@ -28,5 +28,9 @@ A sample shopping web app to demonstrate React, Redux, and Routing.
 `npm start`
 
 #### View app running on localhost:3000
+
+### Exercises
+#### 
+
 
 

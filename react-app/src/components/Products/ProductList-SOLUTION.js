@@ -18,8 +18,9 @@ const ProductList = (
         products.map(product => {
           return (
             <ProductItem
+              key = { product.id }
+              { ...product }
             >
-            TODO - EXERCISE 2 - Pass through correct data into ProductItem
             </ProductItem>
           )}
       )}

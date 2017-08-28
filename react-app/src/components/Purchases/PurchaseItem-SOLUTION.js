@@ -14,9 +14,8 @@ const PurchasesItem = (
       </PurchaseHeader>
       <h3>Purchased Products</h3>
       <ProductList
-        transactions = { <TODO - EXERCISE 1 - Pass through correct data }
+        transactions = { purchaseItem.transactions }
       >
-        
       </ProductList>
       <br />
       <br />

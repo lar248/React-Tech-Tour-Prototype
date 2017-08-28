@@ -1,8 +1,12 @@
+// NOTE: When I create purchase, may need two dispatches:
+  // a) CREATE_PURCHASE
+  // b) CREATE_TRANSACTION 
+
 let nextPurchaseId = 0;
 const purchase = (state, action) => {
   switch (action.type) {
     case 'CREATE_PURCHASE':
-      // STUB STUB STUB - API data call - or maybe not because will just add to current store similar to todos?
+      // TODO - Bonus Exercise
       return {
         merchant_id: action.id,
         medium: action.balance,
@@ -22,15 +26,11 @@ const purchase = (state, action) => {
 const purchases = (state = [], action) => {
   switch (action.type) {
     case 'CREATE_PURCHASE':
-      // STUB STUB STUB
+      // TODO - Bonus Exercise
       return null; // TODO
     default: //VIEW_PURCHASES
       return state;
   }
 }
-
-// NOTE: when I create purchase, will need two dispatches:
-  // a) CREATE_PURCHASE
-  // b) CREATE_TRANSACTION 
 
 export default purchases;
