@@ -32,7 +32,31 @@ A sample shopping web app to demonstrate React, Redux, and Routing.
 #### View app running on localhost:3000
 
 ### Exercises
-#### 
+#### PurchaseItem.js
+##### EXERCISE 1: Pass through correct data
+
+#### ProductList.js
+##### EXERCISE 2: Pass through correct data into Production
+
+#### ProductItem.js
+##### EXERCISE 3: Display product name
+
+#### BONUS
+Implement a ‘Make Purchase’ feature (similar to the Angular app’s functionality)
+
+Hints:
+
+Look at the localData/products.js and localData/purchasedTransactions.js local datasets (these were included to supplement the Nessie API)
+
+Redux = in order to ’Make Purchase’, you will need to dispatch an action to ‘reducers/purchases.js’ 
+
+Note there is no implemented solution in our codebase yet for this so feel free to read docs on:
+React-Redux (http://redux.js.org/docs/basics/UsageWithReact.html)
+
+Take a look at a few additional files purposefully left in the code but not currently used (ie: AddTodo.js (uses reducer todos.js), VisibleTodoList.js (uses reducer visibilityFilter.js)
+
+
+
 
 
 
