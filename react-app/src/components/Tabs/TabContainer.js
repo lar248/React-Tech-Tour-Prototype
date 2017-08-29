@@ -18,11 +18,12 @@ const Container = ({
   );
 };
 
-const getVisibleContainerData = (filter, merchants, purchases, purchasedTransactions) => {
+const getVisibleContainerData = (filter, merchants, products, purchases, purchasedTransactions) => {
   switch (filter) {
     case '/merchants':
       return {
-        merchants: { ...merchants }
+        merchants: { ...merchants },
+        products: { ...products }
       };
     case '/purchases':
       return {
@@ -39,6 +40,7 @@ const mapStateToProps = (state, ownProps) => {
     containerData: getVisibleContainerData(
       ownProps.match.path,
       state.merchants,
+      state.products,
       state.purchases,
       state.purchasedTransactions
     )

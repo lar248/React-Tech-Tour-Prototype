@@ -35,10 +35,6 @@ const Purchases = ({ match }) => (
 
 // then our route config
 const routes = [
-  { path:"/",
-    exact: true,
-    component: () => <Redirect to="/merchants"/>
-  },
   { path: '/merchants',
     component: Merchants
   },

@@ -55,13 +55,14 @@ class Container extends React.Component {
   }
 
   render() {
-    let items = this.state.merchants;
+    let merchants = this.state.merchants;
+    let products = this.props.products;
 
-    if (items.length === 0) {
+    if (merchants.length === 0) {
       return <span></span>
     } else {
       // Returns only merchant objects from the API with city === 'Ithaca'
-      const merchantItems = this.objectToArray(items, 'path').filter(item => item !== undefined);
+      const merchantItems = this.objectToArray(merchants, 'path').filter(item => item !== undefined);
       const match = this.props.match;
       
       return (
@@ -72,6 +73,7 @@ class Container extends React.Component {
                 key = { merchantItem._id }
                 { ...merchantItem }
                 match = { match }
+                products = { products }
               />
             )}
           </ul>

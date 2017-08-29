@@ -7,13 +7,13 @@ import {
 import MerchantDetail from './MerchantDetail';
 
 const MerchantItem = (
-                        merchantItem,
+                        merchantItem
                       ) => {
   return (
     <div>
       <li><Link to={`${merchantItem.match.url}/${merchantItem._id}`}>{ merchantItem.name }</Link></li>
 
-      <Route path={`${merchantItem.match.url}/${merchantItem._id}`} render={()=><MerchantDetail merchantItem = {merchantItem}/>} />
+      <Route path={`${merchantItem.match.url}/${merchantItem._id}`} render={()=><MerchantDetail merchantItem = { merchantItem }/>} />
     </div>
   );
 };
