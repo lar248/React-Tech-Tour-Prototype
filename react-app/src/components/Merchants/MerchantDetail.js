@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { connect } from 'react-redux';
 
 import ProductList from '../Products/ProductList';
@@ -15,14 +15,14 @@ const DetailView = ({ merchantItem }) => {
       </h3>
       <span>Products:</span>
       <ProductList
-        products = { productsMatch.products }
+        products = { productsMatch }
       >
       </ProductList>
-      
     </div>
   )
 }
 
+// Converts an object with items into an array with items - Should move this to a central location and reference it there
 const objectToArray = (
                         obj,
                         filter
@@ -34,11 +34,11 @@ const objectToArray = (
   });
 };
 
+// Return the products offered by a specific merchant
 const getProductsByMerchantId = (products, merchantId ) => {
   const productItems = objectToArray(products);
-  return productItems.find(product => merchantId === product.merchant_id);
+  return productItems.find(product => merchantId === product.merchant_id).products;
 }
-
 
 const MerchantDetail = connect()(DetailView);
 

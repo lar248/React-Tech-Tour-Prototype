@@ -15,6 +15,7 @@ class Container extends React.Component {
       purchasedTransactions: []
     };
 
+    // Formats purchaseItem so that it contains data both about the specific purchase as well as transactions data supplemented locally (inside localData/purchasedTransactions.js)
     this.formatPurchaseItemParams = (
                                       item, 
                                       purchasedTransactionItems
@@ -27,6 +28,7 @@ class Container extends React.Component {
       return purchaseItem;
     }
 
+    // Converts an object with items into an array with items - Should move this to a central location and reference it there
     this.objectToArray = (
                             obj,
                             filter
@@ -39,6 +41,9 @@ class Container extends React.Component {
     };
   }
 
+  // This function is invoked immediately after a component is mounted.
+  // Initialization that requires DOM nodes should go here. If you need to load data from a remote endpoint, this is a good place to instantiate the network request. 
+  // Setting state in this method will trigger a re-rendering.
   componentDidMount() {
     const getCustomerAccount = (url) => {
       return fetch(url)
@@ -67,6 +72,8 @@ class Container extends React.Component {
       });
   }
 
+  // This function is invoked immediately before a component is unmounted and destroyed.
+  // Perform any necessary cleanup in this method, such as invalidating timers, canceling network requests, or cleaning up any DOM elements that were created in componentDidMount
   componentWillUnmount() {
     this.setState({
       purchases: [],

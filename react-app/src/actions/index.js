@@ -1,3 +1,6 @@
+// Any redux action that needs to be dispatched within the application to call an event
+// will be located inside this file
+
 let nextTodoId = 0;
 export const addTodo = (listId, text) => {
   return {
