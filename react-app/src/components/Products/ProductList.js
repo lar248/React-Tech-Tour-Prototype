@@ -6,7 +6,7 @@ class ProductList extends React.Component {
     const transactions = this.props.transactions;
     const productsFromProps = this.props.products;
 
-    if (productsFromProps.length > 0) {
+    if (productsFromProps && productsFromProps.length > 0) {
       return (
         <div>
           {productsFromProps.map(product => {
@@ -21,15 +21,14 @@ class ProductList extends React.Component {
           }
         </div>
       );
-    } 
-    
-    const transactionsSet = transactions[Object.keys(transactions)[0]];
-    
-    if (Object.keys(transactionsSet).length === 0 && transactionsSet.constructor === Object) {
+    }
+
+    if (Object.keys(transactions).length === 0 && transactions.constructor === Object) {
       return <span></span>
     }
-  
-    const products = transactionsSet[0].products;
+
+    const transactionsSet = transactions[Object.keys(transactions)[0]];
+    const products = transactionsSet.products;
     
     return (
       <ul>
@@ -38,7 +37,7 @@ class ProductList extends React.Component {
             return (
               <ProductItem
                 key = { product.id }
-                { ...product }
+                product = { product }
               >
               </ProductItem>
             )}
